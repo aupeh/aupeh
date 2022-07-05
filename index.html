@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harold Aupe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef1571087b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#home">Harold Aupe</a>
+        </div>
+        <div id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contacts">Contacts</a>
+            <i class="fa-solid fa-bars" id="menu" onclick="dropNavigation()"></i>
+        </div>
+        <div id="drop-down-nav">
+            <a href="#home" onclick="hideNavigation()">Home</a>
+            <a href="#about" onclick="hideNavigation()">About</a>
+            <a href="#certificates" onclick="hideNavigation()">Certificates</a>
+            <a href="#contacts" onclick="hideNavigation()">Contacts</a>
+            <i class="fa-solid fa-xmark" onclick="hideNavigation()"></i>
+        </div>
+    </header>
+    <div id="home">
+        <img src="assets/myphoto.png" alt="my photo">
+        <div id="intro-wrapper">
+            <div id="message">
+                <h1>I'm Harold Aupe</h1>
+                <h5>A CS Student and Athlete</h5>
+                <span><a href="#about">know me more</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div id="main">
+            <img src="assets/myphoto-about.jpg" alt="">
+            <div id="about-text">
+                <h2>About Me</h2>
+                <h5>Student <span>& Athlete</span></h5>
+                <p>I am Harold Aupe, 23 years old. I'm from Sto.Nino, Inabanga, Bohol
+                    I was born on June 6, 1999. I am a computer science student and
+                    a consistent athlete as a volleyball player at my school Bohol
+                    Island State University - Clarin Campus. Aside from volleyball,
+                    I also play basketball and billiards. I also love to cook and
+                    travel.
+                </p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </div>
+    <div id="certificates">
+        <div id="wrapper">
+            <div id="cert-text">
+                <h1>certificates</h1>
+                <p>During the 3 years of my computer science journey. I have completed
+                    a number of online courses which improved my skills particularly in
+                    programming. Upon completing the courses I was given some certificates
+                    and few of those are the following.
+                </p>
+                <h1>About Sololearn</h1>
+                <p>Sololearn is a free app that allows users to learn coding skills 
+                    in a dozen different languages, including JavaScript, Java, C++, 
+                    Python, HTML, and SQL. Sololearn app is perfect for picking up a 
+                    new programming language, learning a framework, or just brushing 
+                    up and completing a few coding challenges.
+                </p>
+            </div>
+            <div id="certs-container">
+                <img src="assets/html.jpg" alt="">
+                <img src="assets/css.jpg" alt="">
+                <img src="assets/js.jpg" alt="">
+                <img src="assets/responsive.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <div id="contact-wrapper">
+            <div id="contact-message">
+                <h1>contact me</h1>
+                <h5>get in touch using these accounts</h5>
+            </div>
+            <div id="socials">
+                <div id="fb">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>https://web.facebook.com <br>/harold.aupe</span>
+                </div>
+                <div id="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09635306200</span>
+                </div>
+                <div id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>aupeharold5@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-clr: #BCDDEE;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+}
+#logo a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+#navigation {
+    margin-right: 70px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 50%;
+}
+#navigation a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 0 40px;
+}
+#navigation a:hover {
+    border-bottom: 1px solid var(--main-clr);
+    transition: .5s border;
+}
+#navigation a:active {
+    color: var(--main-clr);
+}
+#menu {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+#drop-down-nav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    height: 50vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    padding-top: 3rem;
+}
+#drop-down-nav a {
+    width: 100%;
+    padding: 1rem;
+    top: 1rem;
+    left: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#drop-down-nav a:active {
+    background-color: gray;
+}
+#drop-down-nav .fa-xmark {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+@media (max-width: 900px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+    #navigation {
+        margin-right: 0;
+    }
+    #navigation a {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/chocolate-hills.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 20px solid black;
+}
+
+#intro-wrapper {
+    color: rgb(188, 221, 238);
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home img {
+    position: absolute;
+    width: 450px;
+    bottom: 0;
+}
+
+#message {
+    text-align: center;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+}
+
+#message h1 {
+    font-size: 70px;
+    width: 100%;
+}
+
+#message h5 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: -90px;
+}
+
+#message span a{
+    padding: 1rem 2rem;
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    transition: .5s;
+}
+
+#message span a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1140px) {
+    #message h1 {
+        font-size: 50px;
+    }
+    
+    #message h5 {
+        font-size: 25px;
+    }
+    #home img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    #message h1 {
+        font-size: 40px;
+    }
+    
+    #message h5 {
+        font-size: 20px;
+    }
+    #home img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    #message h1 {
+        font-size: 30px;
+    }
+    
+    #message h5 {
+        font-size: 17px;
+    }
+    #home img {
+        width: 300px;
+    }
+
+    #message span a {
+        padding: .5rem 1rem;
+    }
+}
+
+#about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+#main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main img {
+    width: 430px;
+}
+
+#about-text {
+    width: 550px;
+    padding: 0 25px;
+}
+
+#about-text h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+#about-text h5 span {
+    color: #C84235;
+}
+
+#about-text p {
+    color: var(--main-clr);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+button {
+    color: white;
+    background-color: #C84235;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+@media (max-width:1100px) {
+    #main img {
+        width: 350px;
+    }
+    #about-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:900px) {
+    #main {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #main img {
+        width: 300px;
+    }
+    #about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    #about-text p {
+        width: 320px;
+        padding: 0 20px;
+    }
+}
+
+#certificates {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(82, 59, 18);
+}
+
+#certificates h1 {
+    text-transform: uppercase;
+    color: #4679a5;
+}
+
+#certificates p {
+    color: white;
+    line-height: 30px;
+}
+
+#certificates p:first-of-type {
+    margin-bottom: 50px;
+}
+
+#wrapper {
+    width: 1200px;
+    max-width: 95%;
+    max-height: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+
+#cert-text {
+    width: 40%;
+    min-width: 350px;
+    text-align: justify;
+}
+
+#certs-container {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 700px;
+    max-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#certs-container img {
+    width: 90%;
+}
+
+@media (max-width: 900px) {
+    #certs-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0;
+    }
+    #certs-container img {
+        width: 250px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:680px) {
+    #wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #certificates p {
+        font-size: 11px;
+        width: 95%;
+    }
+
+    #certs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    } 
+
+    #cert-text {
+        padding-left: 10px;
+    }
+
+    #certs-container img {
+        width: 270px;
+    }
+}
+
+#contacts {
+    width: 100%;
+    background-color: #141F3E;
+    padding: 50px 0;
+}
+
+#contact-wrapper {
+    background-color: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 100px 0px;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-message h1 {
+    text-transform: uppercase;
+    color: var(--main-clr);
+    font-size: 50px;
+}
+
+#contact-message h5 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#socials {
+    width: 100%;
+    display: flex;
+}
+
+#socials div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#socials div i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#socials div span,
+#contact-message {
+    color: aqua;
+}
+
+@media (max-width: 720px) {
+    #contact-wrapper {
+        width: 90%;
+    }
+    #contact-message h1 {
+        font-size: 30px;
+    }
+    
+    #contact-message h5 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    #socials {
+        flex-direction: column;
+    }
+
+    #socials div i {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+}
